@@ -1,0 +1,100 @@
+/* Stil de fundal global */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Container comun pentru toate paginile */
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titluri */
+h1, h2 {
+  text-align: center;
+  color: #5a2a82;
+  margin-bottom: 25px;
+}
+
+/* Formulare */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #5a2a82;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a1f6f;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar span {
+  font-size: 1.5rem;
+  color: #5a2a82;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #5a2a82;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Task list styling */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.task-item {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 6px solid #5a2a82;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

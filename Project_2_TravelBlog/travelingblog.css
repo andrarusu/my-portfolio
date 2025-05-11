@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0ece2;
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  background-color: #c7b198;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #596e79;
+}
+
+.titleNomads {
+  font-family: "Passions Conflict", cursive;
+  font-size: 5rem;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  color: #596e79;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #8ca0a8;
+  background-color: #c7b198;
+  transition: 0.5s ease;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.hero-btn {
+  text-decoration: none;
+  background-color: #c7b198;
+  color: #596e79;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #8ca0a8;
+  color: white;
+}
+
+/* CONTAINERS */
+.containers {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container1 {
+  background-color: #c7b198;
+  color: #596e79;
+  padding: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 #profilePhoto {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  background-color: #c7b198;
+  color: #596e79;
+  padding: 20px;
+  width: 70%;
+}
+
+.container2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container2 img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #596e79;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #8ca0a8;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #f0ece2;
+  padding: 50px 20px;
+  text-align: center;
+  color: #596e79;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  border-left: 5px solid #c7b198;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #8ca0a8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #c7b198;
+  color: #596e79;
+  margin-top: 50px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1,
+  .container2 {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .titleNomads {
+    font-size: 3rem;
+  }
+}
