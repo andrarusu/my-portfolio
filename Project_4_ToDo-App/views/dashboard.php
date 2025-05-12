@@ -96,7 +96,7 @@ $completedTasks = $done->fetchAll();
 <div class="container">
   <h2>My Tasks</h2>
 
-  <!-- Form adăugare -->
+  <!-- Form adăugare taskuri -->
   <form action="../controllers/TaskController.php" method="POST">
     <input type="hidden" name="action" value="add_task">
     <input type="text" name="title" placeholder="Enter a new task" required>

@@ -10,7 +10,8 @@ This is a basic ToDo list application built using PHP and MySQL, following the M
 ├── views/
 ├── public/
 ├── includes/
-
+├── RREADME.md
+├── todo_db.sql
 
 ## 🔧 Features
 - User registration and login (auth system)

@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = trim($_POST['email']);
         $password = $_POST['password'];
 
-        $user = loginUser($email, $password); // Obține datele userului
+        $user = loginUser($email, $password);
 
         if ($user) {
             $_SESSION['user_id'] = $user['id'];
